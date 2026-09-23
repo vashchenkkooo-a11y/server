@@ -1,0 +1,11 @@
+{
+  "version": 1,
+  "skills": {
+    "mentoring-juniors": {
+      "source": "github/awesome-copilot",
+      "sourceType": "github",
+      "skillPath": "skills/mentoring-juniors/SKILL.md",
+      "computedHash": "ea3d12e594aea60a35cf174be77bf9efcc6c3c17483c4560966b945102dfc44a"
+    }
+  }
+}

@@ -1,7 +1,5 @@
 #include "UserDatabase.h"
 #include <iostream>
-// база пользователей в static std::map: логин и пароль. Проверяет, занят ли логин.
-// живёт одну сессию
 
 bool UserDatabase::addUser(const std::string &login,
                            const std::string &password)
@@ -9,7 +7,7 @@ bool UserDatabase::addUser(const std::string &login,
     if (users.find(login) != users.end()) // find(login) ищет логин в map,
         return false;
 
-    users[login] = password; // пара ключ-значение
+    (users[login]).password = password; // пара ключ-значение
     return true;
 }
 

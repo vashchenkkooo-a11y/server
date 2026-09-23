@@ -1,0 +1,4 @@
+/home/yasya/Desktop/project/build/CMakeFiles/client.dir
+/home/yasya/Desktop/project/build/CMakeFiles/server.dir
+/home/yasya/Desktop/project/build/CMakeFiles/edit_cache.dir
+/home/yasya/Desktop/project/build/CMakeFiles/rebuild_cache.dir

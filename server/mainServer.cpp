@@ -9,7 +9,7 @@
 int main(int ac, char **av)
 {
 
-    std::shared_ptr<UserDatabase> users = std::make_shared<UserDatabase> ();
+    std::shared_ptr<UserDatabase> database = std::make_shared<UserDatabase> ();
 
     try
     {
@@ -28,7 +28,7 @@ int main(int ac, char **av)
         std::cout << "port: " << config.port() << '\n';
 
         boost::asio::io_context io_context;
-        Server server(io_context, config);
+        Server server(io_context, config, database);
         io_context.run();
         std::cout << "Listening on " << config.host()
                   << " port " << config.port() << std::endl;

@@ -6,14 +6,14 @@
 RegisterRequest Parser::parseRequest(const std::string &requestText)
 // тип            Класс::его метод(джейсон-текст)
 {
-    // Разбираем джейсон-текст в объект
+
     boost::json::value parsedValue =
         boost::json::parse(requestText);
 
     boost::json::object jsonObject =
         parsedValue.as_object();
 
-    RegisterRequest registerRequest;
+    RegisterRequest registerRequest; 
 
     registerRequest.event =
         std::string(jsonObject.at("event").as_string());

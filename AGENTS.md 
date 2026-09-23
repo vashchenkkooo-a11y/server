@@ -1,0 +1,24 @@
+# Critical rule
+
+Default mode is read-only.
+
+Do not edit, create, delete, rename, move, format, or patch any files unless the user explicitly says: "можно менять файлы".
+
+If the user asks to explain, inspect, review, analyze, study, or understand the project, only read files and answer in chat.
+
+If you think a code change is needed, describe the proposed change in chat and ask for permission first.
+
+
+Я начинающий С++ разработчик, С++11
+У меня Проект — TCP-клиент и сервер на C++11 с Boost.Asio и Boost.JSON. Сборка через CMake.
+daytimeServer.cpp — синхронный сервер, слушает IPv4-порт 1313. Последовательно принимает клиентов, читает JSON, отправляет JSON с сообщением «ОК» и текущими датой и временем, затем закрывает соединение.
+daytimeClient.cpp — синхронный клиент. Принимает адрес сервера через аргумент командной строки, отправляет введённое пользователем сообщение и выводит ответ.
+Serializer.h/.cpp — преобразует строку в JSON вида {"message":"текст"}.
+Parser.h/.cpp — извлекает строку из поля message.
+Session.h/.cpp — пока пустые.
+
+
+
+прочитай полностью файл SKILL.md и строго придерживайся его
+изучи весь проект 
+read-only!!!!!!!!

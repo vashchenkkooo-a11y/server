@@ -9,8 +9,6 @@
 // Обслуживает одно TCP-соединение, т.е. читает запрос,
 //  запускает его обработку и отправляет ответ
 
-
-
 void Session::on_read(const boost::system::error_code &error, // при ошибке выводит её, при успехе пишет сколько байт получили
                       std::size_t bytes)
 
@@ -22,29 +20,19 @@ void Session::on_read(const boost::system::error_code &error, // при ошиб
     }
 
     std::string requestText(arr_, bytes);
-    UserDatabase users;
     Parser parser;
     RegisterRequest request = parser.parseRequest(requestText);
 
     std::cout << "Получена команда: " << request.event << '\n';
-    if (request.event == "REGISTER")
-    {
+    responseText_ = requestHandler_.handle(request);
 
-        if (users.addUser(request.login, request.password)) {
-            responseText_ = "Регистрация успешна";
-            users.printUsers();
-        }
-        else responseText_ = "Такой логин уже существует";
-
-
-        boost::asio::async_write(
-            socket_,
-            boost::asio::buffer(responseText_),
-            std::bind(&Session::on_write,
-                      shared_from_this(),
-                      std::placeholders::_1,
-                      std::placeholders::_2));
-    }
+    boost::asio::async_write(
+        socket_,
+        boost::asio::buffer(responseText_),
+        std::bind(&Session::on_write,
+                  shared_from_this(),
+                  std::placeholders::_1,
+                  std::placeholders::_2));
 }
 void Session::on_write(const boost::system::error_code &error,
                        std::size_t bytes)

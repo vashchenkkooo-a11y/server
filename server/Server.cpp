@@ -6,11 +6,11 @@
 #include <iostream>
 #include "Session.h"
 
-Server::Server(boost::asio::io_context &context, const EndpointConfig &config)
+Server::Server(boost::asio::io_context &context, const EndpointConfig &config, std::shared_ptr<UserDatabase> database)
     : acceptor_(context, tcp::endpoint(boost::asio::ip::make_address(config.host()),
-                                    config.port())),
+                                    config.port())), 
                                     statisticsTimer_(context),
-                                    statusTimer_(context)
+                                    statusTimer_(context), database_(database)
 {
     do_accept();
     start_statistics_timer();
@@ -66,7 +66,7 @@ void Server::on_accept(const boost::system::error_code &error, // Когда п�
     }
     ++acceptedClients_;
     std::shared_ptr<Session> session =
-        std::make_shared<Session>(std::move(socket));
+        std::make_shared<Session>(std::move(socket), database_);
     session->start(); // Начать чтение от принятого клиента. (*session).start();
     do_accept();      // Начать ждать следующего клиента.
 }
