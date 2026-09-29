@@ -69,33 +69,33 @@ include CMakeFiles/client.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/client.dir/flags.make
 
-CMakeFiles/client.dir/main/mainClient.cpp.o: CMakeFiles/client.dir/flags.make
-CMakeFiles/client.dir/main/mainClient.cpp.o: /home/yasya/Desktop/project/main/mainClient.cpp
-CMakeFiles/client.dir/main/mainClient.cpp.o: CMakeFiles/client.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/yasya/Desktop/project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/client.dir/main/mainClient.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/client.dir/main/mainClient.cpp.o -MF CMakeFiles/client.dir/main/mainClient.cpp.o.d -o CMakeFiles/client.dir/main/mainClient.cpp.o -c /home/yasya/Desktop/project/main/mainClient.cpp
+CMakeFiles/client.dir/client/mainClient.cpp.o: CMakeFiles/client.dir/flags.make
+CMakeFiles/client.dir/client/mainClient.cpp.o: /home/yasya/Desktop/project/client/mainClient.cpp
+CMakeFiles/client.dir/client/mainClient.cpp.o: CMakeFiles/client.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/yasya/Desktop/project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/client.dir/client/mainClient.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/client.dir/client/mainClient.cpp.o -MF CMakeFiles/client.dir/client/mainClient.cpp.o.d -o CMakeFiles/client.dir/client/mainClient.cpp.o -c /home/yasya/Desktop/project/client/mainClient.cpp
 
-CMakeFiles/client.dir/main/mainClient.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/client.dir/main/mainClient.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/yasya/Desktop/project/main/mainClient.cpp > CMakeFiles/client.dir/main/mainClient.cpp.i
+CMakeFiles/client.dir/client/mainClient.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/client.dir/client/mainClient.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/yasya/Desktop/project/client/mainClient.cpp > CMakeFiles/client.dir/client/mainClient.cpp.i
 
-CMakeFiles/client.dir/main/mainClient.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/client.dir/main/mainClient.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yasya/Desktop/project/main/mainClient.cpp -o CMakeFiles/client.dir/main/mainClient.cpp.s
+CMakeFiles/client.dir/client/mainClient.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/client.dir/client/mainClient.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yasya/Desktop/project/client/mainClient.cpp -o CMakeFiles/client.dir/client/mainClient.cpp.s
 
-CMakeFiles/client.dir/network/Client.cpp.o: CMakeFiles/client.dir/flags.make
-CMakeFiles/client.dir/network/Client.cpp.o: /home/yasya/Desktop/project/network/Client.cpp
-CMakeFiles/client.dir/network/Client.cpp.o: CMakeFiles/client.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/yasya/Desktop/project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/client.dir/network/Client.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/client.dir/network/Client.cpp.o -MF CMakeFiles/client.dir/network/Client.cpp.o.d -o CMakeFiles/client.dir/network/Client.cpp.o -c /home/yasya/Desktop/project/network/Client.cpp
+CMakeFiles/client.dir/client/Client.cpp.o: CMakeFiles/client.dir/flags.make
+CMakeFiles/client.dir/client/Client.cpp.o: /home/yasya/Desktop/project/client/Client.cpp
+CMakeFiles/client.dir/client/Client.cpp.o: CMakeFiles/client.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/yasya/Desktop/project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/client.dir/client/Client.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/client.dir/client/Client.cpp.o -MF CMakeFiles/client.dir/client/Client.cpp.o.d -o CMakeFiles/client.dir/client/Client.cpp.o -c /home/yasya/Desktop/project/client/Client.cpp
 
-CMakeFiles/client.dir/network/Client.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/client.dir/network/Client.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/yasya/Desktop/project/network/Client.cpp > CMakeFiles/client.dir/network/Client.cpp.i
+CMakeFiles/client.dir/client/Client.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/client.dir/client/Client.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/yasya/Desktop/project/client/Client.cpp > CMakeFiles/client.dir/client/Client.cpp.i
 
-CMakeFiles/client.dir/network/Client.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/client.dir/network/Client.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yasya/Desktop/project/network/Client.cpp -o CMakeFiles/client.dir/network/Client.cpp.s
+CMakeFiles/client.dir/client/Client.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/client.dir/client/Client.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yasya/Desktop/project/client/Client.cpp -o CMakeFiles/client.dir/client/Client.cpp.s
 
 CMakeFiles/client.dir/protocol/Serializer.cpp.o: CMakeFiles/client.dir/flags.make
 CMakeFiles/client.dir/protocol/Serializer.cpp.o: /home/yasya/Desktop/project/protocol/Serializer.cpp
@@ -167,42 +167,42 @@ CMakeFiles/client.dir/config/EndpointConfig.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/client.dir/config/EndpointConfig.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yasya/Desktop/project/config/EndpointConfig.cpp -o CMakeFiles/client.dir/config/EndpointConfig.cpp.s
 
-CMakeFiles/client.dir/network/UserDatabase.cpp.o: CMakeFiles/client.dir/flags.make
-CMakeFiles/client.dir/network/UserDatabase.cpp.o: /home/yasya/Desktop/project/network/UserDatabase.cpp
-CMakeFiles/client.dir/network/UserDatabase.cpp.o: CMakeFiles/client.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/yasya/Desktop/project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/client.dir/network/UserDatabase.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/client.dir/network/UserDatabase.cpp.o -MF CMakeFiles/client.dir/network/UserDatabase.cpp.o.d -o CMakeFiles/client.dir/network/UserDatabase.cpp.o -c /home/yasya/Desktop/project/network/UserDatabase.cpp
+CMakeFiles/client.dir/server/UserDatabase.cpp.o: CMakeFiles/client.dir/flags.make
+CMakeFiles/client.dir/server/UserDatabase.cpp.o: /home/yasya/Desktop/project/server/UserDatabase.cpp
+CMakeFiles/client.dir/server/UserDatabase.cpp.o: CMakeFiles/client.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/yasya/Desktop/project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/client.dir/server/UserDatabase.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/client.dir/server/UserDatabase.cpp.o -MF CMakeFiles/client.dir/server/UserDatabase.cpp.o.d -o CMakeFiles/client.dir/server/UserDatabase.cpp.o -c /home/yasya/Desktop/project/server/UserDatabase.cpp
 
-CMakeFiles/client.dir/network/UserDatabase.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/client.dir/network/UserDatabase.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/yasya/Desktop/project/network/UserDatabase.cpp > CMakeFiles/client.dir/network/UserDatabase.cpp.i
+CMakeFiles/client.dir/server/UserDatabase.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/client.dir/server/UserDatabase.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/yasya/Desktop/project/server/UserDatabase.cpp > CMakeFiles/client.dir/server/UserDatabase.cpp.i
 
-CMakeFiles/client.dir/network/UserDatabase.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/client.dir/network/UserDatabase.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yasya/Desktop/project/network/UserDatabase.cpp -o CMakeFiles/client.dir/network/UserDatabase.cpp.s
+CMakeFiles/client.dir/server/UserDatabase.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/client.dir/server/UserDatabase.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yasya/Desktop/project/server/UserDatabase.cpp -o CMakeFiles/client.dir/server/UserDatabase.cpp.s
 
 # Object files for target client
 client_OBJECTS = \
-"CMakeFiles/client.dir/main/mainClient.cpp.o" \
-"CMakeFiles/client.dir/network/Client.cpp.o" \
+"CMakeFiles/client.dir/client/mainClient.cpp.o" \
+"CMakeFiles/client.dir/client/Client.cpp.o" \
 "CMakeFiles/client.dir/protocol/Serializer.cpp.o" \
 "CMakeFiles/client.dir/protocol/ParserRequest.cpp.o" \
 "CMakeFiles/client.dir/FileReader.cpp.o" \
 "CMakeFiles/client.dir/config/ParserConfig.cpp.o" \
 "CMakeFiles/client.dir/config/EndpointConfig.cpp.o" \
-"CMakeFiles/client.dir/network/UserDatabase.cpp.o"
+"CMakeFiles/client.dir/server/UserDatabase.cpp.o"
 
 # External object files for target client
 client_EXTERNAL_OBJECTS =
 
-client: CMakeFiles/client.dir/main/mainClient.cpp.o
-client: CMakeFiles/client.dir/network/Client.cpp.o
+client: CMakeFiles/client.dir/client/mainClient.cpp.o
+client: CMakeFiles/client.dir/client/Client.cpp.o
 client: CMakeFiles/client.dir/protocol/Serializer.cpp.o
 client: CMakeFiles/client.dir/protocol/ParserRequest.cpp.o
 client: CMakeFiles/client.dir/FileReader.cpp.o
 client: CMakeFiles/client.dir/config/ParserConfig.cpp.o
 client: CMakeFiles/client.dir/config/EndpointConfig.cpp.o
-client: CMakeFiles/client.dir/network/UserDatabase.cpp.o
+client: CMakeFiles/client.dir/server/UserDatabase.cpp.o
 client: CMakeFiles/client.dir/build.make
 client: /usr/lib/x86_64-linux-gnu/libboost_json.so.1.83.0
 client: /usr/lib/x86_64-linux-gnu/libboost_container.so.1.83.0

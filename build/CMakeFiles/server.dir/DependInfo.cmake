@@ -11,12 +11,14 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/yasya/Desktop/project/FileReader.cpp" "CMakeFiles/server.dir/FileReader.cpp.o" "gcc" "CMakeFiles/server.dir/FileReader.cpp.o.d"
   "/home/yasya/Desktop/project/config/EndpointConfig.cpp" "CMakeFiles/server.dir/config/EndpointConfig.cpp.o" "gcc" "CMakeFiles/server.dir/config/EndpointConfig.cpp.o.d"
   "/home/yasya/Desktop/project/config/ParserConfig.cpp" "CMakeFiles/server.dir/config/ParserConfig.cpp.o" "gcc" "CMakeFiles/server.dir/config/ParserConfig.cpp.o.d"
-  "/home/yasya/Desktop/project/main/mainServer.cpp" "CMakeFiles/server.dir/main/mainServer.cpp.o" "gcc" "CMakeFiles/server.dir/main/mainServer.cpp.o.d"
-  "/home/yasya/Desktop/project/network/Server.cpp" "CMakeFiles/server.dir/network/Server.cpp.o" "gcc" "CMakeFiles/server.dir/network/Server.cpp.o.d"
-  "/home/yasya/Desktop/project/network/Session.cpp" "CMakeFiles/server.dir/network/Session.cpp.o" "gcc" "CMakeFiles/server.dir/network/Session.cpp.o.d"
-  "/home/yasya/Desktop/project/network/UserDatabase.cpp" "CMakeFiles/server.dir/network/UserDatabase.cpp.o" "gcc" "CMakeFiles/server.dir/network/UserDatabase.cpp.o.d"
   "/home/yasya/Desktop/project/protocol/ParserRequest.cpp" "CMakeFiles/server.dir/protocol/ParserRequest.cpp.o" "gcc" "CMakeFiles/server.dir/protocol/ParserRequest.cpp.o.d"
   "/home/yasya/Desktop/project/protocol/Serializer.cpp" "CMakeFiles/server.dir/protocol/Serializer.cpp.o" "gcc" "CMakeFiles/server.dir/protocol/Serializer.cpp.o.d"
+  "/home/yasya/Desktop/project/server/RequestHandler.cpp" "CMakeFiles/server.dir/server/RequestHandler.cpp.o" "gcc" "CMakeFiles/server.dir/server/RequestHandler.cpp.o.d"
+  "/home/yasya/Desktop/project/server/Server.cpp" "CMakeFiles/server.dir/server/Server.cpp.o" "gcc" "CMakeFiles/server.dir/server/Server.cpp.o.d"
+  "/home/yasya/Desktop/project/server/Session.cpp" "CMakeFiles/server.dir/server/Session.cpp.o" "gcc" "CMakeFiles/server.dir/server/Session.cpp.o.d"
+  "/home/yasya/Desktop/project/server/TokenGenerator.cpp" "CMakeFiles/server.dir/server/TokenGenerator.cpp.o" "gcc" "CMakeFiles/server.dir/server/TokenGenerator.cpp.o.d"
+  "/home/yasya/Desktop/project/server/UserDatabase.cpp" "CMakeFiles/server.dir/server/UserDatabase.cpp.o" "gcc" "CMakeFiles/server.dir/server/UserDatabase.cpp.o.d"
+  "/home/yasya/Desktop/project/server/mainServer.cpp" "CMakeFiles/server.dir/server/mainServer.cpp.o" "gcc" "CMakeFiles/server.dir/server/mainServer.cpp.o.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

@@ -48,40 +48,144 @@ void Client::on_connect(const boost::system::error_code &error,
                   this));
 }
 
-void Client::communicate()
+void Client::communicate() 
 {
-    std::string command;
-    std::cout << "Введите команду: ";
-    std::getline(std::cin, command);
+    Serializer serializer; //для создания JSON-запросов
 
-    Serializer serializer;
-    std::string requestText;
-    RegisterRequest registerRequest;
-    
-
-    if (command == "/REGISTER")
+    while (true) //бесконечный цикл общения
     {
-        std::string login;
-        std::string password;
+        std::string commandText;
 
-        std::cout << "Login: ";
-        std::getline(std::cin, login);
+        std::cout << "Введите команду: ";
+        std::getline(std::cin, commandText);
 
-        std::cout << "Password: ";
-        std::getline(std::cin, password);
+        const Command command = parseCommand(commandText); //Преобразует строку в enum
+        std::string requestText;
 
-        requestText = serializer.serialize(login, password);//поклали джейсон-текст в переменную
+        switch (command) //выбирает нужный блок по команде
+        {
+        case Command::Register: //Оба случая используют общий код, потому что обе команды
+        case Command::Auth: //запрашивают логин пароль
+        {
+            std::string login;
+            std::string password;
+
+            std::cout << "Login: ";
+            std::getline(std::cin, login);
+
+            std::cout << "Password: ";
+            std::getline(std::cin, password);
+
+            if (command == Command::Register)
+                requestText = serializer.serializeRegister(login, password);
+            else
+                requestText = serializer.serializeAuth(login, password);
+
+            break; //чтоб закончить именно этот кейс внутри свитча
+        }
+
+        case Command::PurchaseList:
+        {
+            if (token_.empty())
+            {
+                std::cout << "Сначала авторизуйтесь\n";
+                continue;
+            }
+            requestText = serializer.serializePurchaseList(token_);
+            break;
+        }
+
+        case Command::ProductList:
+        {
+            requestText = serializer.serializeProductList();
+            break;
+        }
+
+        case Command::Buy:
+        {
+            if (token_.empty())
+            {
+                std::cout << "Сначала авторизуйтесь\n";
+                continue;
+            }
+
+            std::string productId;
+            std::string quantity;
+
+            std::cout << "ID товара: ";
+            std::getline(std::cin, productId);
+
+            std::cout << "Количество: ";
+            std::getline(std::cin, quantity);
+
+            int id = std::stoi(productId);
+            int count = std::stoi(quantity);
+
+
+            requestText = serializer.serializePurchaseCreate(
+                token_,
+                id,
+                count);
+
+            break;
+        }
+        
+    case Command::Exit:
+        return;
+
+    case Command::Unknown:
+        std::cout << "Неизвестная команда\n";
+        continue;
+    }
+
+    boost::asio::write(
+        socket_,
+        boost::asio::buffer(requestText));
+
+    char arr[2048];
+    const std::size_t bytes =
+        socket_.read_some(boost::asio::buffer(arr));
+
+    const std::string responseText(arr, bytes);
+    if (command == Command::Auth)
+    {
+        if (responseText == "Неверный login или password")
+        {
+            token_.clear();
+            std::cout << responseText << '\n';
+        }
+        else
+        {
+            token_ = responseText;
+            std::cout << "Авторизация успешна. Токен: " << token_ << '\n';
+        }
     }
     else
     {
-        std::cout << "Неизвестная команда\n";
-        return;
+        std::cout << responseText << '\n';
     }
-    boost::asio::write(socket_, boost::asio::buffer(requestText)); // клиент отправляет содержимое requestText по этому соединению
+}
+}
 
-    char arr[100];
-    const std::size_t bytes = socket_.read_some(boost::asio::buffer(arr));
-    std::string responseText(arr, bytes);
+Command Client::parseCommand(const std::string &command)
+{
+    if (command == "/REGISTER")
+        return Command::Register;
 
-    std::cout << responseText << '\n';
+    if (command == "/AUTH")
+        return Command::Auth;
+
+    if (command == "/BUY")
+        return Command::Buy;
+
+    if (command == "/PURCHASE_LIST")
+        return Command::PurchaseList;
+
+    if (command == "/PRODUCT_LIST")
+        return Command::ProductList;
+
+    if (command == "/EXIT")
+        return Command::Exit;
+
+    return Command::Unknown;
 }

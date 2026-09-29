@@ -28,8 +28,9 @@ int main(int ac, char **av)
         std::cout << "port: " << config.port() << '\n';
 
         boost::asio::io_context io_context;
-        Server server(io_context, config, database);
-        io_context.run();
+        Server server(io_context, config, database); // БД передается в сервер - значит база общая для всего сервера, 
+        //а не для дного запроса 
+        io_context.run(); //программа начинает ждать подключения и сетевые сообщения
         std::cout << "Listening on " << config.host()
                   << " port " << config.port() << std::endl;
     }

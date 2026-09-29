@@ -69,19 +69,19 @@ include CMakeFiles/server.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/server.dir/flags.make
 
-CMakeFiles/server.dir/main/mainServer.cpp.o: CMakeFiles/server.dir/flags.make
-CMakeFiles/server.dir/main/mainServer.cpp.o: /home/yasya/Desktop/project/main/mainServer.cpp
-CMakeFiles/server.dir/main/mainServer.cpp.o: CMakeFiles/server.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/yasya/Desktop/project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/server.dir/main/mainServer.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/server.dir/main/mainServer.cpp.o -MF CMakeFiles/server.dir/main/mainServer.cpp.o.d -o CMakeFiles/server.dir/main/mainServer.cpp.o -c /home/yasya/Desktop/project/main/mainServer.cpp
+CMakeFiles/server.dir/server/mainServer.cpp.o: CMakeFiles/server.dir/flags.make
+CMakeFiles/server.dir/server/mainServer.cpp.o: /home/yasya/Desktop/project/server/mainServer.cpp
+CMakeFiles/server.dir/server/mainServer.cpp.o: CMakeFiles/server.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/yasya/Desktop/project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/server.dir/server/mainServer.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/server.dir/server/mainServer.cpp.o -MF CMakeFiles/server.dir/server/mainServer.cpp.o.d -o CMakeFiles/server.dir/server/mainServer.cpp.o -c /home/yasya/Desktop/project/server/mainServer.cpp
 
-CMakeFiles/server.dir/main/mainServer.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/server.dir/main/mainServer.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/yasya/Desktop/project/main/mainServer.cpp > CMakeFiles/server.dir/main/mainServer.cpp.i
+CMakeFiles/server.dir/server/mainServer.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/server.dir/server/mainServer.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/yasya/Desktop/project/server/mainServer.cpp > CMakeFiles/server.dir/server/mainServer.cpp.i
 
-CMakeFiles/server.dir/main/mainServer.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/server.dir/main/mainServer.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yasya/Desktop/project/main/mainServer.cpp -o CMakeFiles/server.dir/main/mainServer.cpp.s
+CMakeFiles/server.dir/server/mainServer.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/server.dir/server/mainServer.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yasya/Desktop/project/server/mainServer.cpp -o CMakeFiles/server.dir/server/mainServer.cpp.s
 
 CMakeFiles/server.dir/FileReader.cpp.o: CMakeFiles/server.dir/flags.make
 CMakeFiles/server.dir/FileReader.cpp.o: /home/yasya/Desktop/project/FileReader.cpp
@@ -125,38 +125,52 @@ CMakeFiles/server.dir/protocol/ParserRequest.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/server.dir/protocol/ParserRequest.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yasya/Desktop/project/protocol/ParserRequest.cpp -o CMakeFiles/server.dir/protocol/ParserRequest.cpp.s
 
-CMakeFiles/server.dir/network/Server.cpp.o: CMakeFiles/server.dir/flags.make
-CMakeFiles/server.dir/network/Server.cpp.o: /home/yasya/Desktop/project/network/Server.cpp
-CMakeFiles/server.dir/network/Server.cpp.o: CMakeFiles/server.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/yasya/Desktop/project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/server.dir/network/Server.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/server.dir/network/Server.cpp.o -MF CMakeFiles/server.dir/network/Server.cpp.o.d -o CMakeFiles/server.dir/network/Server.cpp.o -c /home/yasya/Desktop/project/network/Server.cpp
+CMakeFiles/server.dir/server/Server.cpp.o: CMakeFiles/server.dir/flags.make
+CMakeFiles/server.dir/server/Server.cpp.o: /home/yasya/Desktop/project/server/Server.cpp
+CMakeFiles/server.dir/server/Server.cpp.o: CMakeFiles/server.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/yasya/Desktop/project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/server.dir/server/Server.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/server.dir/server/Server.cpp.o -MF CMakeFiles/server.dir/server/Server.cpp.o.d -o CMakeFiles/server.dir/server/Server.cpp.o -c /home/yasya/Desktop/project/server/Server.cpp
 
-CMakeFiles/server.dir/network/Server.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/server.dir/network/Server.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/yasya/Desktop/project/network/Server.cpp > CMakeFiles/server.dir/network/Server.cpp.i
+CMakeFiles/server.dir/server/Server.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/server.dir/server/Server.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/yasya/Desktop/project/server/Server.cpp > CMakeFiles/server.dir/server/Server.cpp.i
 
-CMakeFiles/server.dir/network/Server.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/server.dir/network/Server.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yasya/Desktop/project/network/Server.cpp -o CMakeFiles/server.dir/network/Server.cpp.s
+CMakeFiles/server.dir/server/Server.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/server.dir/server/Server.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yasya/Desktop/project/server/Server.cpp -o CMakeFiles/server.dir/server/Server.cpp.s
 
-CMakeFiles/server.dir/network/Session.cpp.o: CMakeFiles/server.dir/flags.make
-CMakeFiles/server.dir/network/Session.cpp.o: /home/yasya/Desktop/project/network/Session.cpp
-CMakeFiles/server.dir/network/Session.cpp.o: CMakeFiles/server.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/yasya/Desktop/project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/server.dir/network/Session.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/server.dir/network/Session.cpp.o -MF CMakeFiles/server.dir/network/Session.cpp.o.d -o CMakeFiles/server.dir/network/Session.cpp.o -c /home/yasya/Desktop/project/network/Session.cpp
+CMakeFiles/server.dir/server/Session.cpp.o: CMakeFiles/server.dir/flags.make
+CMakeFiles/server.dir/server/Session.cpp.o: /home/yasya/Desktop/project/server/Session.cpp
+CMakeFiles/server.dir/server/Session.cpp.o: CMakeFiles/server.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/yasya/Desktop/project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/server.dir/server/Session.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/server.dir/server/Session.cpp.o -MF CMakeFiles/server.dir/server/Session.cpp.o.d -o CMakeFiles/server.dir/server/Session.cpp.o -c /home/yasya/Desktop/project/server/Session.cpp
 
-CMakeFiles/server.dir/network/Session.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/server.dir/network/Session.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/yasya/Desktop/project/network/Session.cpp > CMakeFiles/server.dir/network/Session.cpp.i
+CMakeFiles/server.dir/server/Session.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/server.dir/server/Session.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/yasya/Desktop/project/server/Session.cpp > CMakeFiles/server.dir/server/Session.cpp.i
 
-CMakeFiles/server.dir/network/Session.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/server.dir/network/Session.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yasya/Desktop/project/network/Session.cpp -o CMakeFiles/server.dir/network/Session.cpp.s
+CMakeFiles/server.dir/server/Session.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/server.dir/server/Session.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yasya/Desktop/project/server/Session.cpp -o CMakeFiles/server.dir/server/Session.cpp.s
+
+CMakeFiles/server.dir/server/RequestHandler.cpp.o: CMakeFiles/server.dir/flags.make
+CMakeFiles/server.dir/server/RequestHandler.cpp.o: /home/yasya/Desktop/project/server/RequestHandler.cpp
+CMakeFiles/server.dir/server/RequestHandler.cpp.o: CMakeFiles/server.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/yasya/Desktop/project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/server.dir/server/RequestHandler.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/server.dir/server/RequestHandler.cpp.o -MF CMakeFiles/server.dir/server/RequestHandler.cpp.o.d -o CMakeFiles/server.dir/server/RequestHandler.cpp.o -c /home/yasya/Desktop/project/server/RequestHandler.cpp
+
+CMakeFiles/server.dir/server/RequestHandler.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/server.dir/server/RequestHandler.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/yasya/Desktop/project/server/RequestHandler.cpp > CMakeFiles/server.dir/server/RequestHandler.cpp.i
+
+CMakeFiles/server.dir/server/RequestHandler.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/server.dir/server/RequestHandler.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yasya/Desktop/project/server/RequestHandler.cpp -o CMakeFiles/server.dir/server/RequestHandler.cpp.s
 
 CMakeFiles/server.dir/protocol/Serializer.cpp.o: CMakeFiles/server.dir/flags.make
 CMakeFiles/server.dir/protocol/Serializer.cpp.o: /home/yasya/Desktop/project/protocol/Serializer.cpp
 CMakeFiles/server.dir/protocol/Serializer.cpp.o: CMakeFiles/server.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/yasya/Desktop/project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/server.dir/protocol/Serializer.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/yasya/Desktop/project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/server.dir/protocol/Serializer.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/server.dir/protocol/Serializer.cpp.o -MF CMakeFiles/server.dir/protocol/Serializer.cpp.o.d -o CMakeFiles/server.dir/protocol/Serializer.cpp.o -c /home/yasya/Desktop/project/protocol/Serializer.cpp
 
 CMakeFiles/server.dir/protocol/Serializer.cpp.i: cmake_force
@@ -170,7 +184,7 @@ CMakeFiles/server.dir/protocol/Serializer.cpp.s: cmake_force
 CMakeFiles/server.dir/config/EndpointConfig.cpp.o: CMakeFiles/server.dir/flags.make
 CMakeFiles/server.dir/config/EndpointConfig.cpp.o: /home/yasya/Desktop/project/config/EndpointConfig.cpp
 CMakeFiles/server.dir/config/EndpointConfig.cpp.o: CMakeFiles/server.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/yasya/Desktop/project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/server.dir/config/EndpointConfig.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/yasya/Desktop/project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/server.dir/config/EndpointConfig.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/server.dir/config/EndpointConfig.cpp.o -MF CMakeFiles/server.dir/config/EndpointConfig.cpp.o.d -o CMakeFiles/server.dir/config/EndpointConfig.cpp.o -c /home/yasya/Desktop/project/config/EndpointConfig.cpp
 
 CMakeFiles/server.dir/config/EndpointConfig.cpp.i: cmake_force
@@ -181,49 +195,67 @@ CMakeFiles/server.dir/config/EndpointConfig.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/server.dir/config/EndpointConfig.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yasya/Desktop/project/config/EndpointConfig.cpp -o CMakeFiles/server.dir/config/EndpointConfig.cpp.s
 
-CMakeFiles/server.dir/network/UserDatabase.cpp.o: CMakeFiles/server.dir/flags.make
-CMakeFiles/server.dir/network/UserDatabase.cpp.o: /home/yasya/Desktop/project/network/UserDatabase.cpp
-CMakeFiles/server.dir/network/UserDatabase.cpp.o: CMakeFiles/server.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/yasya/Desktop/project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/server.dir/network/UserDatabase.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/server.dir/network/UserDatabase.cpp.o -MF CMakeFiles/server.dir/network/UserDatabase.cpp.o.d -o CMakeFiles/server.dir/network/UserDatabase.cpp.o -c /home/yasya/Desktop/project/network/UserDatabase.cpp
+CMakeFiles/server.dir/server/UserDatabase.cpp.o: CMakeFiles/server.dir/flags.make
+CMakeFiles/server.dir/server/UserDatabase.cpp.o: /home/yasya/Desktop/project/server/UserDatabase.cpp
+CMakeFiles/server.dir/server/UserDatabase.cpp.o: CMakeFiles/server.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/yasya/Desktop/project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/server.dir/server/UserDatabase.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/server.dir/server/UserDatabase.cpp.o -MF CMakeFiles/server.dir/server/UserDatabase.cpp.o.d -o CMakeFiles/server.dir/server/UserDatabase.cpp.o -c /home/yasya/Desktop/project/server/UserDatabase.cpp
 
-CMakeFiles/server.dir/network/UserDatabase.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/server.dir/network/UserDatabase.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/yasya/Desktop/project/network/UserDatabase.cpp > CMakeFiles/server.dir/network/UserDatabase.cpp.i
+CMakeFiles/server.dir/server/UserDatabase.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/server.dir/server/UserDatabase.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/yasya/Desktop/project/server/UserDatabase.cpp > CMakeFiles/server.dir/server/UserDatabase.cpp.i
 
-CMakeFiles/server.dir/network/UserDatabase.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/server.dir/network/UserDatabase.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yasya/Desktop/project/network/UserDatabase.cpp -o CMakeFiles/server.dir/network/UserDatabase.cpp.s
+CMakeFiles/server.dir/server/UserDatabase.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/server.dir/server/UserDatabase.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yasya/Desktop/project/server/UserDatabase.cpp -o CMakeFiles/server.dir/server/UserDatabase.cpp.s
+
+CMakeFiles/server.dir/server/TokenGenerator.cpp.o: CMakeFiles/server.dir/flags.make
+CMakeFiles/server.dir/server/TokenGenerator.cpp.o: /home/yasya/Desktop/project/server/TokenGenerator.cpp
+CMakeFiles/server.dir/server/TokenGenerator.cpp.o: CMakeFiles/server.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/yasya/Desktop/project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/server.dir/server/TokenGenerator.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/server.dir/server/TokenGenerator.cpp.o -MF CMakeFiles/server.dir/server/TokenGenerator.cpp.o.d -o CMakeFiles/server.dir/server/TokenGenerator.cpp.o -c /home/yasya/Desktop/project/server/TokenGenerator.cpp
+
+CMakeFiles/server.dir/server/TokenGenerator.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/server.dir/server/TokenGenerator.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/yasya/Desktop/project/server/TokenGenerator.cpp > CMakeFiles/server.dir/server/TokenGenerator.cpp.i
+
+CMakeFiles/server.dir/server/TokenGenerator.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/server.dir/server/TokenGenerator.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yasya/Desktop/project/server/TokenGenerator.cpp -o CMakeFiles/server.dir/server/TokenGenerator.cpp.s
 
 # Object files for target server
 server_OBJECTS = \
-"CMakeFiles/server.dir/main/mainServer.cpp.o" \
+"CMakeFiles/server.dir/server/mainServer.cpp.o" \
 "CMakeFiles/server.dir/FileReader.cpp.o" \
 "CMakeFiles/server.dir/config/ParserConfig.cpp.o" \
 "CMakeFiles/server.dir/protocol/ParserRequest.cpp.o" \
-"CMakeFiles/server.dir/network/Server.cpp.o" \
-"CMakeFiles/server.dir/network/Session.cpp.o" \
+"CMakeFiles/server.dir/server/Server.cpp.o" \
+"CMakeFiles/server.dir/server/Session.cpp.o" \
+"CMakeFiles/server.dir/server/RequestHandler.cpp.o" \
 "CMakeFiles/server.dir/protocol/Serializer.cpp.o" \
 "CMakeFiles/server.dir/config/EndpointConfig.cpp.o" \
-"CMakeFiles/server.dir/network/UserDatabase.cpp.o"
+"CMakeFiles/server.dir/server/UserDatabase.cpp.o" \
+"CMakeFiles/server.dir/server/TokenGenerator.cpp.o"
 
 # External object files for target server
 server_EXTERNAL_OBJECTS =
 
-server: CMakeFiles/server.dir/main/mainServer.cpp.o
+server: CMakeFiles/server.dir/server/mainServer.cpp.o
 server: CMakeFiles/server.dir/FileReader.cpp.o
 server: CMakeFiles/server.dir/config/ParserConfig.cpp.o
 server: CMakeFiles/server.dir/protocol/ParserRequest.cpp.o
-server: CMakeFiles/server.dir/network/Server.cpp.o
-server: CMakeFiles/server.dir/network/Session.cpp.o
+server: CMakeFiles/server.dir/server/Server.cpp.o
+server: CMakeFiles/server.dir/server/Session.cpp.o
+server: CMakeFiles/server.dir/server/RequestHandler.cpp.o
 server: CMakeFiles/server.dir/protocol/Serializer.cpp.o
 server: CMakeFiles/server.dir/config/EndpointConfig.cpp.o
-server: CMakeFiles/server.dir/network/UserDatabase.cpp.o
+server: CMakeFiles/server.dir/server/UserDatabase.cpp.o
+server: CMakeFiles/server.dir/server/TokenGenerator.cpp.o
 server: CMakeFiles/server.dir/build.make
 server: /usr/lib/x86_64-linux-gnu/libboost_json.so.1.83.0
 server: /usr/lib/x86_64-linux-gnu/libboost_container.so.1.83.0
 server: CMakeFiles/server.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/yasya/Desktop/project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Linking CXX executable server"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/yasya/Desktop/project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Linking CXX executable server"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/server.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

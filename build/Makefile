@@ -169,6 +169,54 @@ FileReader.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/FileReader.cpp.s
 .PHONY : FileReader.cpp.s
 
+client/Client.o: client/Client.cpp.o
+.PHONY : client/Client.o
+
+# target to build an object file
+client/Client.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/client.dir/build.make CMakeFiles/client.dir/client/Client.cpp.o
+.PHONY : client/Client.cpp.o
+
+client/Client.i: client/Client.cpp.i
+.PHONY : client/Client.i
+
+# target to preprocess a source file
+client/Client.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/client.dir/build.make CMakeFiles/client.dir/client/Client.cpp.i
+.PHONY : client/Client.cpp.i
+
+client/Client.s: client/Client.cpp.s
+.PHONY : client/Client.s
+
+# target to generate assembly for a file
+client/Client.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/client.dir/build.make CMakeFiles/client.dir/client/Client.cpp.s
+.PHONY : client/Client.cpp.s
+
+client/mainClient.o: client/mainClient.cpp.o
+.PHONY : client/mainClient.o
+
+# target to build an object file
+client/mainClient.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/client.dir/build.make CMakeFiles/client.dir/client/mainClient.cpp.o
+.PHONY : client/mainClient.cpp.o
+
+client/mainClient.i: client/mainClient.cpp.i
+.PHONY : client/mainClient.i
+
+# target to preprocess a source file
+client/mainClient.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/client.dir/build.make CMakeFiles/client.dir/client/mainClient.cpp.i
+.PHONY : client/mainClient.cpp.i
+
+client/mainClient.s: client/mainClient.cpp.s
+.PHONY : client/mainClient.s
+
+# target to generate assembly for a file
+client/mainClient.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/client.dir/build.make CMakeFiles/client.dir/client/mainClient.cpp.s
+.PHONY : client/mainClient.cpp.s
+
 config/EndpointConfig.o: config/EndpointConfig.cpp.o
 .PHONY : config/EndpointConfig.o
 
@@ -222,153 +270,6 @@ config/ParserConfig.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/client.dir/build.make CMakeFiles/client.dir/config/ParserConfig.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/config/ParserConfig.cpp.s
 .PHONY : config/ParserConfig.cpp.s
-
-main/mainClient.o: main/mainClient.cpp.o
-.PHONY : main/mainClient.o
-
-# target to build an object file
-main/mainClient.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/client.dir/build.make CMakeFiles/client.dir/main/mainClient.cpp.o
-.PHONY : main/mainClient.cpp.o
-
-main/mainClient.i: main/mainClient.cpp.i
-.PHONY : main/mainClient.i
-
-# target to preprocess a source file
-main/mainClient.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/client.dir/build.make CMakeFiles/client.dir/main/mainClient.cpp.i
-.PHONY : main/mainClient.cpp.i
-
-main/mainClient.s: main/mainClient.cpp.s
-.PHONY : main/mainClient.s
-
-# target to generate assembly for a file
-main/mainClient.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/client.dir/build.make CMakeFiles/client.dir/main/mainClient.cpp.s
-.PHONY : main/mainClient.cpp.s
-
-main/mainServer.o: main/mainServer.cpp.o
-.PHONY : main/mainServer.o
-
-# target to build an object file
-main/mainServer.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/main/mainServer.cpp.o
-.PHONY : main/mainServer.cpp.o
-
-main/mainServer.i: main/mainServer.cpp.i
-.PHONY : main/mainServer.i
-
-# target to preprocess a source file
-main/mainServer.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/main/mainServer.cpp.i
-.PHONY : main/mainServer.cpp.i
-
-main/mainServer.s: main/mainServer.cpp.s
-.PHONY : main/mainServer.s
-
-# target to generate assembly for a file
-main/mainServer.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/main/mainServer.cpp.s
-.PHONY : main/mainServer.cpp.s
-
-network/Client.o: network/Client.cpp.o
-.PHONY : network/Client.o
-
-# target to build an object file
-network/Client.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/client.dir/build.make CMakeFiles/client.dir/network/Client.cpp.o
-.PHONY : network/Client.cpp.o
-
-network/Client.i: network/Client.cpp.i
-.PHONY : network/Client.i
-
-# target to preprocess a source file
-network/Client.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/client.dir/build.make CMakeFiles/client.dir/network/Client.cpp.i
-.PHONY : network/Client.cpp.i
-
-network/Client.s: network/Client.cpp.s
-.PHONY : network/Client.s
-
-# target to generate assembly for a file
-network/Client.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/client.dir/build.make CMakeFiles/client.dir/network/Client.cpp.s
-.PHONY : network/Client.cpp.s
-
-network/Server.o: network/Server.cpp.o
-.PHONY : network/Server.o
-
-# target to build an object file
-network/Server.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/network/Server.cpp.o
-.PHONY : network/Server.cpp.o
-
-network/Server.i: network/Server.cpp.i
-.PHONY : network/Server.i
-
-# target to preprocess a source file
-network/Server.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/network/Server.cpp.i
-.PHONY : network/Server.cpp.i
-
-network/Server.s: network/Server.cpp.s
-.PHONY : network/Server.s
-
-# target to generate assembly for a file
-network/Server.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/network/Server.cpp.s
-.PHONY : network/Server.cpp.s
-
-network/Session.o: network/Session.cpp.o
-.PHONY : network/Session.o
-
-# target to build an object file
-network/Session.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/network/Session.cpp.o
-.PHONY : network/Session.cpp.o
-
-network/Session.i: network/Session.cpp.i
-.PHONY : network/Session.i
-
-# target to preprocess a source file
-network/Session.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/network/Session.cpp.i
-.PHONY : network/Session.cpp.i
-
-network/Session.s: network/Session.cpp.s
-.PHONY : network/Session.s
-
-# target to generate assembly for a file
-network/Session.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/network/Session.cpp.s
-.PHONY : network/Session.cpp.s
-
-network/UserDatabase.o: network/UserDatabase.cpp.o
-.PHONY : network/UserDatabase.o
-
-# target to build an object file
-network/UserDatabase.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/client.dir/build.make CMakeFiles/client.dir/network/UserDatabase.cpp.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/network/UserDatabase.cpp.o
-.PHONY : network/UserDatabase.cpp.o
-
-network/UserDatabase.i: network/UserDatabase.cpp.i
-.PHONY : network/UserDatabase.i
-
-# target to preprocess a source file
-network/UserDatabase.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/client.dir/build.make CMakeFiles/client.dir/network/UserDatabase.cpp.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/network/UserDatabase.cpp.i
-.PHONY : network/UserDatabase.cpp.i
-
-network/UserDatabase.s: network/UserDatabase.cpp.s
-.PHONY : network/UserDatabase.s
-
-# target to generate assembly for a file
-network/UserDatabase.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/client.dir/build.make CMakeFiles/client.dir/network/UserDatabase.cpp.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/network/UserDatabase.cpp.s
-.PHONY : network/UserDatabase.cpp.s
 
 protocol/ParserRequest.o: protocol/ParserRequest.cpp.o
 .PHONY : protocol/ParserRequest.o
@@ -424,6 +325,153 @@ protocol/Serializer.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/protocol/Serializer.cpp.s
 .PHONY : protocol/Serializer.cpp.s
 
+server/RequestHandler.o: server/RequestHandler.cpp.o
+.PHONY : server/RequestHandler.o
+
+# target to build an object file
+server/RequestHandler.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/server/RequestHandler.cpp.o
+.PHONY : server/RequestHandler.cpp.o
+
+server/RequestHandler.i: server/RequestHandler.cpp.i
+.PHONY : server/RequestHandler.i
+
+# target to preprocess a source file
+server/RequestHandler.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/server/RequestHandler.cpp.i
+.PHONY : server/RequestHandler.cpp.i
+
+server/RequestHandler.s: server/RequestHandler.cpp.s
+.PHONY : server/RequestHandler.s
+
+# target to generate assembly for a file
+server/RequestHandler.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/server/RequestHandler.cpp.s
+.PHONY : server/RequestHandler.cpp.s
+
+server/Server.o: server/Server.cpp.o
+.PHONY : server/Server.o
+
+# target to build an object file
+server/Server.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/server/Server.cpp.o
+.PHONY : server/Server.cpp.o
+
+server/Server.i: server/Server.cpp.i
+.PHONY : server/Server.i
+
+# target to preprocess a source file
+server/Server.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/server/Server.cpp.i
+.PHONY : server/Server.cpp.i
+
+server/Server.s: server/Server.cpp.s
+.PHONY : server/Server.s
+
+# target to generate assembly for a file
+server/Server.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/server/Server.cpp.s
+.PHONY : server/Server.cpp.s
+
+server/Session.o: server/Session.cpp.o
+.PHONY : server/Session.o
+
+# target to build an object file
+server/Session.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/server/Session.cpp.o
+.PHONY : server/Session.cpp.o
+
+server/Session.i: server/Session.cpp.i
+.PHONY : server/Session.i
+
+# target to preprocess a source file
+server/Session.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/server/Session.cpp.i
+.PHONY : server/Session.cpp.i
+
+server/Session.s: server/Session.cpp.s
+.PHONY : server/Session.s
+
+# target to generate assembly for a file
+server/Session.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/server/Session.cpp.s
+.PHONY : server/Session.cpp.s
+
+server/TokenGenerator.o: server/TokenGenerator.cpp.o
+.PHONY : server/TokenGenerator.o
+
+# target to build an object file
+server/TokenGenerator.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/server/TokenGenerator.cpp.o
+.PHONY : server/TokenGenerator.cpp.o
+
+server/TokenGenerator.i: server/TokenGenerator.cpp.i
+.PHONY : server/TokenGenerator.i
+
+# target to preprocess a source file
+server/TokenGenerator.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/server/TokenGenerator.cpp.i
+.PHONY : server/TokenGenerator.cpp.i
+
+server/TokenGenerator.s: server/TokenGenerator.cpp.s
+.PHONY : server/TokenGenerator.s
+
+# target to generate assembly for a file
+server/TokenGenerator.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/server/TokenGenerator.cpp.s
+.PHONY : server/TokenGenerator.cpp.s
+
+server/UserDatabase.o: server/UserDatabase.cpp.o
+.PHONY : server/UserDatabase.o
+
+# target to build an object file
+server/UserDatabase.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/client.dir/build.make CMakeFiles/client.dir/server/UserDatabase.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/server/UserDatabase.cpp.o
+.PHONY : server/UserDatabase.cpp.o
+
+server/UserDatabase.i: server/UserDatabase.cpp.i
+.PHONY : server/UserDatabase.i
+
+# target to preprocess a source file
+server/UserDatabase.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/client.dir/build.make CMakeFiles/client.dir/server/UserDatabase.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/server/UserDatabase.cpp.i
+.PHONY : server/UserDatabase.cpp.i
+
+server/UserDatabase.s: server/UserDatabase.cpp.s
+.PHONY : server/UserDatabase.s
+
+# target to generate assembly for a file
+server/UserDatabase.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/client.dir/build.make CMakeFiles/client.dir/server/UserDatabase.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/server/UserDatabase.cpp.s
+.PHONY : server/UserDatabase.cpp.s
+
+server/mainServer.o: server/mainServer.cpp.o
+.PHONY : server/mainServer.o
+
+# target to build an object file
+server/mainServer.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/server/mainServer.cpp.o
+.PHONY : server/mainServer.cpp.o
+
+server/mainServer.i: server/mainServer.cpp.i
+.PHONY : server/mainServer.i
+
+# target to preprocess a source file
+server/mainServer.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/server/mainServer.cpp.i
+.PHONY : server/mainServer.cpp.i
+
+server/mainServer.s: server/mainServer.cpp.s
+.PHONY : server/mainServer.s
+
+# target to generate assembly for a file
+server/mainServer.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/server/mainServer.cpp.s
+.PHONY : server/mainServer.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -437,36 +485,42 @@ help:
 	@echo "... FileReader.o"
 	@echo "... FileReader.i"
 	@echo "... FileReader.s"
+	@echo "... client/Client.o"
+	@echo "... client/Client.i"
+	@echo "... client/Client.s"
+	@echo "... client/mainClient.o"
+	@echo "... client/mainClient.i"
+	@echo "... client/mainClient.s"
 	@echo "... config/EndpointConfig.o"
 	@echo "... config/EndpointConfig.i"
 	@echo "... config/EndpointConfig.s"
 	@echo "... config/ParserConfig.o"
 	@echo "... config/ParserConfig.i"
 	@echo "... config/ParserConfig.s"
-	@echo "... main/mainClient.o"
-	@echo "... main/mainClient.i"
-	@echo "... main/mainClient.s"
-	@echo "... main/mainServer.o"
-	@echo "... main/mainServer.i"
-	@echo "... main/mainServer.s"
-	@echo "... network/Client.o"
-	@echo "... network/Client.i"
-	@echo "... network/Client.s"
-	@echo "... network/Server.o"
-	@echo "... network/Server.i"
-	@echo "... network/Server.s"
-	@echo "... network/Session.o"
-	@echo "... network/Session.i"
-	@echo "... network/Session.s"
-	@echo "... network/UserDatabase.o"
-	@echo "... network/UserDatabase.i"
-	@echo "... network/UserDatabase.s"
 	@echo "... protocol/ParserRequest.o"
 	@echo "... protocol/ParserRequest.i"
 	@echo "... protocol/ParserRequest.s"
 	@echo "... protocol/Serializer.o"
 	@echo "... protocol/Serializer.i"
 	@echo "... protocol/Serializer.s"
+	@echo "... server/RequestHandler.o"
+	@echo "... server/RequestHandler.i"
+	@echo "... server/RequestHandler.s"
+	@echo "... server/Server.o"
+	@echo "... server/Server.i"
+	@echo "... server/Server.s"
+	@echo "... server/Session.o"
+	@echo "... server/Session.i"
+	@echo "... server/Session.s"
+	@echo "... server/TokenGenerator.o"
+	@echo "... server/TokenGenerator.i"
+	@echo "... server/TokenGenerator.s"
+	@echo "... server/UserDatabase.o"
+	@echo "... server/UserDatabase.i"
+	@echo "... server/UserDatabase.s"
+	@echo "... server/mainServer.o"
+	@echo "... server/mainServer.i"
+	@echo "... server/mainServer.s"
 .PHONY : help
 
 

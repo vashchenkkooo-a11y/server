@@ -15,3 +15,5 @@ std::string FileReader:: readFile()
     return buffer.str();
 
 }
+
+//Читает текст из EndpointConfig.json

@@ -26,7 +26,6 @@ int main(int ac, char **av)
 
         Client::Endpoints endpoints =
             resolver.resolve(config.host(), std::to_string(config.port()));
-
         Client client(io_context, std::move(endpoints));
         client.try_connect();
         io_context.run();

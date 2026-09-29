@@ -15,7 +15,7 @@ public:
     Server(boost::asio::io_context &context, const EndpointConfig &config, std::shared_ptr<UserDatabase> database);
 
 private:
-    tcp::acceptor acceptor_; // объект, который будет принимать подключения клиентов
+    tcp::acceptor acceptor_; // слушает порт и принимает новые TCP-подключения
     std::shared_ptr<UserDatabase> database_;
 
     void do_accept();        //  метод "начать ожидание"
@@ -23,7 +23,7 @@ private:
     void on_accept(const boost::system::error_code &error,
                    tcp::socket socket); // обработать результат
 
-    void on_write(const boost::system::error_code &error, std::size_t bytes);
+    // void on_write(const boost::system::error_code &error, std::size_t bytes);
     boost::asio::steady_timer statisticsTimer_;
     
     void start_statistics_timer();
