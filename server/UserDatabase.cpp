@@ -1,6 +1,7 @@
 #include "UserDatabase.h"
 #include <iostream>
 
+
 bool UserDatabase::addUser(const std::string &login,
                            const std::string &password)
 {
@@ -89,4 +90,9 @@ std::string UserDatabase::createPurchase(
         std::to_string(quantity) + " шт.");
 
     return "Покупка создана";
+}
+UserDatabase::~UserDatabase()  //при уничтожении UserDatabase, если есть
+{ //соединение с SQLite - закрыть его 
+    if (db_ != nullptr)
+        sqlite3_close(db_);
 }

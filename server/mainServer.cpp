@@ -5,14 +5,21 @@
 #include <boost/asio.hpp>
 #include <iostream>
 #include "UserDatabase.h"
+#include <SQLiteCpp/SQLiteCpp.h>
+#include "Models/UserModel.h"
 
 int main(int ac, char **av)
 {
 
-    std::shared_ptr<UserDatabase> database = std::make_shared<UserDatabase> ();
+    std::shared_ptr<UserDatabase> database = std::make_shared<UserDatabase>();
 
     try
     {
+        SQLite::Database db(
+            "shop.db",
+            SQLite::OPEN_READWRITE);
+
+        UserModel userModel(database);
         if (ac != 2)
         {
             std::cerr << "Usage: server <config.json>\n";
@@ -28,9 +35,9 @@ int main(int ac, char **av)
         std::cout << "port: " << config.port() << '\n';
 
         boost::asio::io_context io_context;
-        Server server(io_context, config, database); // БД передается в сервер - значит база общая для всего сервера, 
-        //а не для дного запроса 
-        io_context.run(); //программа начинает ждать подключения и сетевые сообщения
+        Server server(io_context, config, database); // БД передается в сервер - значит база общая для всего сервера,
+        // а не для дного запроса
+        io_context.run(); // программа начинает ждать подключения и сетевые сообщения
         std::cout << "Listening on " << config.host()
                   << " port " << config.port() << std::endl;
     }

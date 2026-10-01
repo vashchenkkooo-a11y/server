@@ -2,6 +2,7 @@
 #include <map> // std::map контейнер для хранения пар ключ -> значение
 #include <string>
 #include <vector>
+#include <sqlite3.h>
 
 struct User
 {
@@ -42,7 +43,9 @@ public:
         const std::string &token,
         std::vector<std::string> &purchases);
     std::string createPurchase(const std::string &token, int productIT, int quantity);
-
+    
+    UserDatabase(const std::string &dbPath);//при создании UserDatabase ему нужно передать путь к файлу базы shop.db
+    ~UserDatabase(); //для закрытия соединения
 
 private:
     // база для всех объектов
@@ -56,6 +59,7 @@ private:
         {1, {"Ошейник для бобика", 10}},
         {2, {"вкусняхи", 10}},
         {3, {"рыжий кот", 7}}};
+    sqlite3 *db_ = nullptr; // указатель на соединение с SQLite
 };
 // first  → ключ
 // second → значение
