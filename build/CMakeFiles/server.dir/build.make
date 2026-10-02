@@ -253,6 +253,7 @@ server: CMakeFiles/server.dir/server/UserDatabase.cpp.o
 server: CMakeFiles/server.dir/server/TokenGenerator.cpp.o
 server: CMakeFiles/server.dir/build.make
 server: /usr/lib/x86_64-linux-gnu/libboost_json.so.1.83.0
+server: /usr/lib/x86_64-linux-gnu/libsqlite3.so
 server: /usr/lib/x86_64-linux-gnu/libboost_container.so.1.83.0
 server: CMakeFiles/server.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/yasya/Desktop/project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Linking CXX executable server"

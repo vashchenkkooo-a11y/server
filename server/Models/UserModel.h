@@ -6,16 +6,24 @@
 class UserModel
 {
 public:
-    UserModel(const std::string& databasePath);
+    UserModel(const std::string &dbPath);
 
-    bool registerUser(
-        const std::string& login,
-        const std::string& password);
+    bool reg(
+        const std::string &login,
+        const std::string &pass);
 
-    bool authorizeUser(
-        const std::string& login,
-        const std::string& password);
+    std::string auth(
+        const std::string &login,
+        const std::string &pass);
+
+    void saveToken(
+        const std::string &token,
+        const std::string &login);
+
+    bool findLoginByToken(
+        const std::string &token,
+        std::string &login);
 
 private:
-    SQLite::Database database_;
+    SQLite::Database &db; //модель не создаёт новую базу, а хранит доступ к уже открытому объекту
 };
