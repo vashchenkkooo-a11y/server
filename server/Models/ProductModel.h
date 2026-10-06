@@ -12,6 +12,6 @@ public:
     int quantity;
 
 private: 
-    SQLite::Database &db; //модель не создаёт новую базу, а хранит доступ к уже открытому объекту
+    SQLite::Database db; 
 };
 
