@@ -11,6 +11,15 @@ find_package(SQLite3 REQUIRED)
 # Копировать настройки рядом с собранными client и server.
 configure_file(config/EndpointConfig.json EndpointConfig.json COPYONLY)
 add_subdirectory(SQLiteCpp)
+add_library(shop STATIC
+    shop/Models/UserModel.cpp
+    shop/TokenGenerator.cpp
+)
+
+target_include_directories(shop PUBLIC
+    ${CMAKE_CURRENT_SOURCE_DIR}/shop
+)
+
 add_executable(client
     client/mainClient.cpp
     client/Client.cpp
@@ -33,11 +42,12 @@ add_executable(server
     protocol/Serializer.cpp
     config/EndpointConfig.cpp
     server/UserDatabase.cpp
-    server/TokenGenerator.cpp
 )
 
 target_include_directories(client PRIVATE . config network protocol)
 target_include_directories(server PRIVATE . config network protocol)
 
 target_link_libraries(client PRIVATE Boost::json Threads::Threads)
-target_link_libraries(server PRIVATE Boost::json Threads::Threads  SQLiteCpp)
+target_link_libraries(server PRIVATE Boost::json Threads::Threads  SQLiteCpp shop)
+target_link_libraries(shop PUBLIC SQLiteCpp PRIVATE Boost::headers
+)

@@ -26,8 +26,7 @@ public:
 
 private:
     SQLite::Database const db;  
-    int a;
-    const int const *p = &a;
+
 };                                                                                   
 
 //дописать библиотеку (сделать свою библиотеку)

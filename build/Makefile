@@ -85,6 +85,51 @@ rebuild_cache:
 rebuild_cache/fast: rebuild_cache
 .PHONY : rebuild_cache/fast
 
+# Special rule for the target list_install_components
+list_install_components:
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Available install components are: \"Unspecified\" \"headers\" \"libraries\""
+.PHONY : list_install_components
+
+# Special rule for the target list_install_components
+list_install_components/fast: list_install_components
+.PHONY : list_install_components/fast
+
+# Special rule for the target install
+install: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Install the project..."
+	/usr/bin/cmake -P cmake_install.cmake
+.PHONY : install
+
+# Special rule for the target install
+install/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Install the project..."
+	/usr/bin/cmake -P cmake_install.cmake
+.PHONY : install/fast
+
+# Special rule for the target install/local
+install/local: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Installing only the local directory..."
+	/usr/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+.PHONY : install/local
+
+# Special rule for the target install/local
+install/local/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Installing only the local directory..."
+	/usr/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+.PHONY : install/local/fast
+
+# Special rule for the target install/strip
+install/strip: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Installing the project stripped..."
+	/usr/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+.PHONY : install/strip
+
+# Special rule for the target install/strip
+install/strip/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Installing the project stripped..."
+	/usr/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+.PHONY : install/strip/fast
+
 # The main all target
 all: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/yasya/Desktop/project/build/CMakeFiles /home/yasya/Desktop/project/build//CMakeFiles/progress.marks
@@ -117,6 +162,19 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named shop
+
+# Build rule for target.
+shop: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 shop
+.PHONY : shop
+
+# fast build rule for target.
+shop/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/shop.dir/build.make CMakeFiles/shop.dir/build
+.PHONY : shop/fast
+
+#=============================================================================
 # Target rules for targets named client
 
 # Build rule for target.
@@ -141,6 +199,19 @@ server: cmake_check_build_system
 server/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/build
 .PHONY : server/fast
+
+#=============================================================================
+# Target rules for targets named SQLiteCpp
+
+# Build rule for target.
+SQLiteCpp: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 SQLiteCpp
+.PHONY : SQLiteCpp
+
+# fast build rule for target.
+SQLiteCpp/fast:
+	$(MAKE) $(MAKESILENT) -f SQLiteCpp/CMakeFiles/SQLiteCpp.dir/build.make SQLiteCpp/CMakeFiles/SQLiteCpp.dir/build
+.PHONY : SQLiteCpp/fast
 
 FileReader.o: FileReader.cpp.o
 .PHONY : FileReader.o
@@ -397,30 +468,6 @@ server/Session.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/server/Session.cpp.s
 .PHONY : server/Session.cpp.s
 
-server/TokenGenerator.o: server/TokenGenerator.cpp.o
-.PHONY : server/TokenGenerator.o
-
-# target to build an object file
-server/TokenGenerator.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/server/TokenGenerator.cpp.o
-.PHONY : server/TokenGenerator.cpp.o
-
-server/TokenGenerator.i: server/TokenGenerator.cpp.i
-.PHONY : server/TokenGenerator.i
-
-# target to preprocess a source file
-server/TokenGenerator.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/server/TokenGenerator.cpp.i
-.PHONY : server/TokenGenerator.cpp.i
-
-server/TokenGenerator.s: server/TokenGenerator.cpp.s
-.PHONY : server/TokenGenerator.s
-
-# target to generate assembly for a file
-server/TokenGenerator.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/server/TokenGenerator.cpp.s
-.PHONY : server/TokenGenerator.cpp.s
-
 server/UserDatabase.o: server/UserDatabase.cpp.o
 .PHONY : server/UserDatabase.o
 
@@ -472,6 +519,54 @@ server/mainServer.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/server/mainServer.cpp.s
 .PHONY : server/mainServer.cpp.s
 
+shop/Models/UserModel.o: shop/Models/UserModel.cpp.o
+.PHONY : shop/Models/UserModel.o
+
+# target to build an object file
+shop/Models/UserModel.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/shop.dir/build.make CMakeFiles/shop.dir/shop/Models/UserModel.cpp.o
+.PHONY : shop/Models/UserModel.cpp.o
+
+shop/Models/UserModel.i: shop/Models/UserModel.cpp.i
+.PHONY : shop/Models/UserModel.i
+
+# target to preprocess a source file
+shop/Models/UserModel.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/shop.dir/build.make CMakeFiles/shop.dir/shop/Models/UserModel.cpp.i
+.PHONY : shop/Models/UserModel.cpp.i
+
+shop/Models/UserModel.s: shop/Models/UserModel.cpp.s
+.PHONY : shop/Models/UserModel.s
+
+# target to generate assembly for a file
+shop/Models/UserModel.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/shop.dir/build.make CMakeFiles/shop.dir/shop/Models/UserModel.cpp.s
+.PHONY : shop/Models/UserModel.cpp.s
+
+shop/TokenGenerator.o: shop/TokenGenerator.cpp.o
+.PHONY : shop/TokenGenerator.o
+
+# target to build an object file
+shop/TokenGenerator.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/shop.dir/build.make CMakeFiles/shop.dir/shop/TokenGenerator.cpp.o
+.PHONY : shop/TokenGenerator.cpp.o
+
+shop/TokenGenerator.i: shop/TokenGenerator.cpp.i
+.PHONY : shop/TokenGenerator.i
+
+# target to preprocess a source file
+shop/TokenGenerator.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/shop.dir/build.make CMakeFiles/shop.dir/shop/TokenGenerator.cpp.i
+.PHONY : shop/TokenGenerator.cpp.i
+
+shop/TokenGenerator.s: shop/TokenGenerator.cpp.s
+.PHONY : shop/TokenGenerator.s
+
+# target to generate assembly for a file
+shop/TokenGenerator.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/shop.dir/build.make CMakeFiles/shop.dir/shop/TokenGenerator.cpp.s
+.PHONY : shop/TokenGenerator.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -479,9 +574,15 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... edit_cache"
+	@echo "... install"
+	@echo "... install/local"
+	@echo "... install/strip"
+	@echo "... list_install_components"
 	@echo "... rebuild_cache"
+	@echo "... SQLiteCpp"
 	@echo "... client"
 	@echo "... server"
+	@echo "... shop"
 	@echo "... FileReader.o"
 	@echo "... FileReader.i"
 	@echo "... FileReader.s"
@@ -512,15 +613,18 @@ help:
 	@echo "... server/Session.o"
 	@echo "... server/Session.i"
 	@echo "... server/Session.s"
-	@echo "... server/TokenGenerator.o"
-	@echo "... server/TokenGenerator.i"
-	@echo "... server/TokenGenerator.s"
 	@echo "... server/UserDatabase.o"
 	@echo "... server/UserDatabase.i"
 	@echo "... server/UserDatabase.s"
 	@echo "... server/mainServer.o"
 	@echo "... server/mainServer.i"
 	@echo "... server/mainServer.s"
+	@echo "... shop/Models/UserModel.o"
+	@echo "... shop/Models/UserModel.i"
+	@echo "... shop/Models/UserModel.s"
+	@echo "... shop/TokenGenerator.o"
+	@echo "... shop/TokenGenerator.i"
+	@echo "... shop/TokenGenerator.s"
 .PHONY : help
 
 

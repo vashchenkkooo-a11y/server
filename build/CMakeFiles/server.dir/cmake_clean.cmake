@@ -15,8 +15,6 @@ file(REMOVE_RECURSE
   "CMakeFiles/server.dir/server/Server.cpp.o.d"
   "CMakeFiles/server.dir/server/Session.cpp.o"
   "CMakeFiles/server.dir/server/Session.cpp.o.d"
-  "CMakeFiles/server.dir/server/TokenGenerator.cpp.o"
-  "CMakeFiles/server.dir/server/TokenGenerator.cpp.o.d"
   "CMakeFiles/server.dir/server/UserDatabase.cpp.o"
   "CMakeFiles/server.dir/server/UserDatabase.cpp.o.d"
   "CMakeFiles/server.dir/server/mainServer.cpp.o"

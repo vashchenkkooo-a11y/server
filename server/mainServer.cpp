@@ -19,7 +19,7 @@ int main(int ac, char **av)
             "shop.db",
             SQLite::OPEN_READWRITE);
 
-        UserModel userModel(database);
+        UserModel userModel("shop.db");
         if (ac != 2)
         {
             std::cerr << "Usage: server <config.json>\n";

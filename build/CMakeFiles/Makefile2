@@ -63,18 +63,63 @@ CMAKE_BINARY_DIR = /home/yasya/Desktop/project/build
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
+all: CMakeFiles/shop.dir/all
 all: CMakeFiles/client.dir/all
 all: CMakeFiles/server.dir/all
+all: SQLiteCpp/all
 .PHONY : all
 
 # The main recursive "preinstall" target.
-preinstall:
+preinstall: SQLiteCpp/preinstall
 .PHONY : preinstall
 
 # The main recursive "clean" target.
+clean: CMakeFiles/shop.dir/clean
 clean: CMakeFiles/client.dir/clean
 clean: CMakeFiles/server.dir/clean
+clean: SQLiteCpp/clean
 .PHONY : clean
+
+#=============================================================================
+# Directory level rules for directory SQLiteCpp
+
+# Recursive "all" directory target.
+SQLiteCpp/all: SQLiteCpp/CMakeFiles/SQLiteCpp.dir/all
+.PHONY : SQLiteCpp/all
+
+# Recursive "preinstall" directory target.
+SQLiteCpp/preinstall:
+.PHONY : SQLiteCpp/preinstall
+
+# Recursive "clean" directory target.
+SQLiteCpp/clean: SQLiteCpp/CMakeFiles/SQLiteCpp.dir/clean
+.PHONY : SQLiteCpp/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/shop.dir
+
+# All Build rule for target.
+CMakeFiles/shop.dir/all: SQLiteCpp/CMakeFiles/SQLiteCpp.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/shop.dir/build.make CMakeFiles/shop.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/shop.dir/build.make CMakeFiles/shop.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/yasya/Desktop/project/build/CMakeFiles --progress-num=29,30,31 "Built target shop"
+.PHONY : CMakeFiles/shop.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/shop.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/yasya/Desktop/project/build/CMakeFiles 11
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/shop.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/yasya/Desktop/project/build/CMakeFiles 0
+.PHONY : CMakeFiles/shop.dir/rule
+
+# Convenience name for target.
+shop: CMakeFiles/shop.dir/rule
+.PHONY : shop
+
+# clean rule for target.
+CMakeFiles/shop.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/shop.dir/build.make CMakeFiles/shop.dir/clean
+.PHONY : CMakeFiles/shop.dir/clean
 
 #=============================================================================
 # Target rules for target CMakeFiles/client.dir
@@ -83,7 +128,7 @@ clean: CMakeFiles/server.dir/clean
 CMakeFiles/client.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/client.dir/build.make CMakeFiles/client.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/client.dir/build.make CMakeFiles/client.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/yasya/Desktop/project/build/CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9 "Built target client"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/yasya/Desktop/project/build/CMakeFiles --progress-num=9,10,11,12,13,14,15,16,17 "Built target client"
 .PHONY : CMakeFiles/client.dir/all
 
 # Build rule for subdir invocation for target.
@@ -106,15 +151,16 @@ CMakeFiles/client.dir/clean:
 # Target rules for target CMakeFiles/server.dir
 
 # All Build rule for target.
-CMakeFiles/server.dir/all:
+CMakeFiles/server.dir/all: SQLiteCpp/CMakeFiles/SQLiteCpp.dir/all
+CMakeFiles/server.dir/all: CMakeFiles/shop.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/yasya/Desktop/project/build/CMakeFiles --progress-num=10,11,12,13,14,15,16,17,18,19,20,21 "Built target server"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/yasya/Desktop/project/build/CMakeFiles --progress-num=18,19,20,21,22,23,24,25,26,27,28 "Built target server"
 .PHONY : CMakeFiles/server.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/server.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/yasya/Desktop/project/build/CMakeFiles 12
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/yasya/Desktop/project/build/CMakeFiles 22
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/server.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/yasya/Desktop/project/build/CMakeFiles 0
 .PHONY : CMakeFiles/server.dir/rule
@@ -127,6 +173,32 @@ server: CMakeFiles/server.dir/rule
 CMakeFiles/server.dir/clean:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/clean
 .PHONY : CMakeFiles/server.dir/clean
+
+#=============================================================================
+# Target rules for target SQLiteCpp/CMakeFiles/SQLiteCpp.dir
+
+# All Build rule for target.
+SQLiteCpp/CMakeFiles/SQLiteCpp.dir/all:
+	$(MAKE) $(MAKESILENT) -f SQLiteCpp/CMakeFiles/SQLiteCpp.dir/build.make SQLiteCpp/CMakeFiles/SQLiteCpp.dir/depend
+	$(MAKE) $(MAKESILENT) -f SQLiteCpp/CMakeFiles/SQLiteCpp.dir/build.make SQLiteCpp/CMakeFiles/SQLiteCpp.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/yasya/Desktop/project/build/CMakeFiles --progress-num=1,2,3,4,5,6,7,8 "Built target SQLiteCpp"
+.PHONY : SQLiteCpp/CMakeFiles/SQLiteCpp.dir/all
+
+# Build rule for subdir invocation for target.
+SQLiteCpp/CMakeFiles/SQLiteCpp.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/yasya/Desktop/project/build/CMakeFiles 8
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 SQLiteCpp/CMakeFiles/SQLiteCpp.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/yasya/Desktop/project/build/CMakeFiles 0
+.PHONY : SQLiteCpp/CMakeFiles/SQLiteCpp.dir/rule
+
+# Convenience name for target.
+SQLiteCpp: SQLiteCpp/CMakeFiles/SQLiteCpp.dir/rule
+.PHONY : SQLiteCpp
+
+# clean rule for target.
+SQLiteCpp/CMakeFiles/SQLiteCpp.dir/clean:
+	$(MAKE) $(MAKESILENT) -f SQLiteCpp/CMakeFiles/SQLiteCpp.dir/build.make SQLiteCpp/CMakeFiles/SQLiteCpp.dir/clean
+.PHONY : SQLiteCpp/CMakeFiles/SQLiteCpp.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

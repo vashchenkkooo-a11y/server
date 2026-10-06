@@ -1,4 +1,16 @@
+/home/yasya/Desktop/project/build/CMakeFiles/shop.dir
 /home/yasya/Desktop/project/build/CMakeFiles/client.dir
 /home/yasya/Desktop/project/build/CMakeFiles/server.dir
 /home/yasya/Desktop/project/build/CMakeFiles/edit_cache.dir
 /home/yasya/Desktop/project/build/CMakeFiles/rebuild_cache.dir
+/home/yasya/Desktop/project/build/CMakeFiles/list_install_components.dir
+/home/yasya/Desktop/project/build/CMakeFiles/install.dir
+/home/yasya/Desktop/project/build/CMakeFiles/install/local.dir
+/home/yasya/Desktop/project/build/CMakeFiles/install/strip.dir
+/home/yasya/Desktop/project/build/SQLiteCpp/CMakeFiles/SQLiteCpp.dir
+/home/yasya/Desktop/project/build/SQLiteCpp/CMakeFiles/edit_cache.dir
+/home/yasya/Desktop/project/build/SQLiteCpp/CMakeFiles/rebuild_cache.dir
+/home/yasya/Desktop/project/build/SQLiteCpp/CMakeFiles/list_install_components.dir
+/home/yasya/Desktop/project/build/SQLiteCpp/CMakeFiles/install.dir
+/home/yasya/Desktop/project/build/SQLiteCpp/CMakeFiles/install/local.dir
+/home/yasya/Desktop/project/build/SQLiteCpp/CMakeFiles/install/strip.dir

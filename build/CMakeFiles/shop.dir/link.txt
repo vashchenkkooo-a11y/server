@@ -1,0 +1,2 @@
+/usr/bin/ar qc libshop.a CMakeFiles/shop.dir/shop/Models/UserModel.cpp.o CMakeFiles/shop.dir/shop/TokenGenerator.cpp.o
+/usr/bin/ranlib libshop.a
