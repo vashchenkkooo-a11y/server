@@ -25,7 +25,7 @@ public:
         std::string &login);
 
 private:
-    SQLite::Database const db;  
+    SQLite::Database db;  
 
 };                                                                                   
 

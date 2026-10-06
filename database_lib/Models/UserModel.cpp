@@ -1,10 +1,22 @@
 #include "UserModel.h"
 #include "TokenGenerator.h"
 // таблицы: users, tokens -> Регистрация, вход, сохранение токена, поиск пользователя по токену
-UserModel::UserModel(const std::string &dbPath) //ссылка на "db.db"
-    : db(dbPath, SQLite::OPEN_READWRITE) {}
+UserModel::UserModel(const std::string &dbPath) // ссылка на "db.db"
+    : db(dbPath, SQLite::OPEN_READWRITE)
+{
+    db.exec(
+        "CREATE TABLE IF NOT EXISTS users ("
+        "login TEXT PRIMARY KEY NOT NULL, "
+        "pass TEXT NOT NULL"
+        ")");
 
-    
+    db.exec(
+        "CREATE TABLE IF NOT EXISTS tokens ("
+        "token TEXT PRIMARY KEY, "
+        "login TEXT NOT NULL"
+        ")");
+}
+
 void UserModel::saveToken(
     const std::string &token,
     const std::string &login)
@@ -23,15 +35,16 @@ std::string UserModel::auth(const std::string &login, const std::string &pass)
     if (findUserQuery.executeStep()) // попробуй получить найденную строку
     {
         const std::string db_pass = findUserQuery.getColumn(1).getText();
-        if (pass == db_pass) {
+        if (pass == db_pass)
+        {
             TokenGenerator generator;
             std::string token = generator.generate();
 
             saveToken(token, login);
 
             return token;
+        }
     }
-}
 
     return "";
 }
